@@ -18,10 +18,11 @@ namespace FuncImplementation
             };
 
             //A method which could take in a Func<int> and return a string which outputs "The Generates Number is: {number"}
-            Func<Func<int>,string> printMessage = (randGenerator) =>
+            Func<Func<int>, string> printMessage = (randGenerator) =>
             {
-                int 
-            }
+                int number = randGenerator();
+                return $"The Generates Number is: {number}";
+            };
         }
     }
 }
